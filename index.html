@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lagoona - сеть отелей</title>
+  <link rel="stylesheet" href="/CSS/normalize.css">
   <link rel="stylesheet" href="/CSS/style.css">
 </head>
 
 <body class="body">
-  <div class="container">
-    <header class="header">
+  <header class="header">
+    <div class="container">
       <div class="header-left">
         <a href="index.html" class="logo-link">
           <img src="/img/logo.png" alt="Lagoona" class="logo-img"></a>
@@ -43,12 +44,14 @@
         </ul>
       </nav>
       <div class="header-btn-block">
-        <a href="" class="header-btn-iWantTour">Хочу тур</a>
-        <a href="" class="header-btn-backCall">Обратный звонок</a>
+        <button class="header-btn-iWantTour">Хочу тур</button>
+        <button class="header-btn-backCall">Обратный звонок</button>
       </div>
-    </header>
-    <main class="main">
-      <div class="specialOffers">
+    </div>
+  </header>
+  <main class="main">
+    <section class="specialOffers">
+      <div class="container">
         <h2 class="subtitle">Спецпредложения</h2>
         <div class="specialOffers-blocks">
           <div class="specialOffers-blockLeft">
@@ -79,7 +82,9 @@
           </div>
         </div>
       </div>
-      <div class="aboutUs">
+    </section>
+    <section class="aboutUs">
+      <div class="container">
         <h2 class="subtitle">О нас</h2>
         <p class="aboutUs-text">
           Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс
@@ -89,7 +94,9 @@
           структура организации требуют определения и уточнения существенных финансовых и административных условий.
         </p>
       </div>
-      <div class="services">
+    </section>
+    <section class="services">
+      <div class="container">
         <h2 class="subtitle">Услуги</h2>
         <ul class="services-list">
           <li class="services-list-item">
@@ -126,7 +133,9 @@
           </li>
         </ul>
       </div>
-      <div class="benifits">
+    </section>
+    <section class="benifits">
+      <div class="container">
         <h2 class="subtitle">Преимущества</h2>
         <ul class="benifits-list">
           <li class="benifits-item">
@@ -179,7 +188,9 @@
           </li>
         </ul>
       </div>
-      <div class="placing">
+    </section>
+    <section class="placing">
+      <div class="container">
         <h2 class="subtitle">Размещение</h2>
         <ul class="placing-list">
           <li class="placing-item">
@@ -260,16 +271,22 @@
           </li>
         </ul>
       </div>
-      <div class="iWantTour">
+    </section>
+    <section class="iWantTour">
+      <div class="container">
         <h2 class="subtitle">Хочу тур</h2>
         <div class="iWantTour-head">
         </div>
       </div>
-      <div class="contacts">
+    </section>
+    <section class="contacts">
+      <div class="container">
         <h2 class="subtitle">Контакты</h2>
       </div>
-    </main>
-    <footer class="footer">
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
       <div class="footer-left">
         © 2012-2020 Управляющая компания
         <br>
@@ -312,8 +329,8 @@
       <a href="index.html" class="footer-logo-link">
         <img src="/img/footerLogo.svg" alt="" class="footer-logo">
       </a>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 
 </html>

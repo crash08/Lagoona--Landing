@@ -1,3 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*===================================================================================================*/
+/* Fonts */
 @font-face {
   font-family: 'Muller Medium';
   src: url(/Fonts/MullerMedium.woff2) format('woff2'),
@@ -12,44 +25,39 @@
   font-style: normal;
   font-display: swap;
 }
+/*===================================================================================================*/
+/* container */
+html {
+  font-family: 'Muller Medium';
+}
 .body {
-  margin-top: 30px;
-  width: 1920px;
+  padding-top: 30px;
   font-family: 'Muller Regular';
   font-weight: 400;
   font-size: 16px;
 }
-/* container */
 .container {
   margin: 0 auto;
-  width: 1170px;
+  max-width: 1200px;
+  padding: 0 15px;
 }
 /*===================================================================================================*/
 /* Header */
 .header {
-  display: flex;
 }
 .header-left {
-  display: inline-block;
-  width: 580px;
 }
 .logo-img {
   width: 261px;
   height: 54px;
-  padding-right: 40px;
+  margin-right: 40px;
 }
 .header-phone {
-  margin: auto 0 auto 0;
-  font-family: 'Muller Medium';
   font-size: 20px;
   font-weight: 500;
   color: #666;
-  text-decoration: none;
 }
 .header-right {
-  display: inline-block;
-  width: 585px;
-  text-align: right;
 }
 .header-link_lk {
 }
