@@ -30,11 +30,12 @@ ul {
 html {
   font-family: 'Muller Medium';
 }
-.body {
+body {
   padding-top: 30px;
   font-family: 'Muller Regular';
   font-weight: 400;
   font-size: 16px;
+  background-color: #E5E5E5;
 }
 .container {
   margin: 0 auto;
@@ -44,8 +45,17 @@ html {
 /*===================================================================================================*/
 /* Header */
 .header {
+  margin-bottom: 70px;
+}
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 .header-left {
+  display: inherit;
+  align-items: inherit;
 }
 .logo-img {
   width: 261px;
@@ -62,24 +72,38 @@ html {
 .header-link_lk {
 }
 
-/* Header Nav */
+/* header-nav */
+.container-header-nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+}
 .header-nav {
 }
 .header-nav-list {
+  display: flex;
+  align-items: center;
 }
-.header-nav-item {
+.header-nav-item:not(:last-child) {
+  margin-right: 45px;
 }
 .header-nav-item-link {
 }
 .header-btn-block {
 }
+.header-btn {
+  padding: 13px 20px;
+}
 .header-btn-iWantTour {
+  margin-right: 40px;
 }
 .header-btn-backCall {
 }
+
 /*===================================================================================================*/
 /* Main */
-
 .main {
 }
 .specialOffers {
