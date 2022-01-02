@@ -1,0 +1,185 @@
+@font-face {
+  font-family: 'Muller Medium';
+  src: url(/Fonts/MullerMedium.woff2) format('woff2'),
+  url(/Fonts/MullerMedium.woff) format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Muller Regular';
+  src: url(/Fonts/MullerRegular.woff2) format('woff2'),
+  url(/Fonts/MullerRegular.woff) format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+.body {
+  margin-top: 30px;
+  width: 1920px;
+  font-family: 'Muller Regular';
+  font-weight: 400;
+  font-size: 16px;
+}
+/* container */
+.container {
+  margin: 0 auto;
+  width: 1170px;
+}
+/*===================================================================================================*/
+/* Header */
+.header {
+  display: flex;
+}
+.header-left {
+  display: inline-block;
+  width: 580px;
+}
+.logo-img {
+  width: 261px;
+  height: 54px;
+  padding-right: 40px;
+}
+.header-phone {
+  margin: auto 0 auto 0;
+  font-family: 'Muller Medium';
+  font-size: 20px;
+  font-weight: 500;
+  color: #666;
+  text-decoration: none;
+}
+.header-right {
+  display: inline-block;
+  width: 585px;
+  text-align: right;
+}
+.header-link_lk {
+}
+
+/* Header Nav */
+.header-nav {
+}
+.header-nav-list {
+}
+.header-nav-item {
+}
+.header-nav-item-link {
+}
+.header-btn-block {
+}
+.header-btn-iWantTour {
+}
+.header-btn-backCall {
+}
+/*===================================================================================================*/
+/* Main */
+
+.main {
+}
+.specialOffers {
+}
+.subtitle {
+}
+.specialOffers-blocks {
+}
+.specialOffers-blockLeft {
+}
+.specialOffers-blockLeft-1 {
+}
+.specialOffers-blockLeft-1-img {
+}
+.blockLeft-1-link {
+}
+.specialOffers-blockLeft-2 {
+}
+.specialOffers-blockRight {
+}
+.aboutUs {
+}
+.aboutUs-text {
+}
+.services {
+}
+.services-list {
+}
+.services-list-item {
+}
+.services-list-item-img {
+}
+.services-list-item-link {
+}
+.services-list-item-text {
+}
+.benifits {
+}
+.benifits-list {
+}
+.benifits-item {
+}
+.benifits-item-svg {
+}
+.benifits-item-text {
+}
+.placing {
+}
+.placing-list {
+}
+.placing-item {
+}
+.placing-item-img {
+}
+.placing-item-price {
+}
+.placing-item-price_ {
+}
+.placing-item-star {
+}
+.placing-item-coutry1 {
+}
+.placing-item-coutry2 {
+}
+.placing-item-link {
+}
+.placing-item-last {
+}
+.placing-item-img-last {
+}
+.placing-item-link-last {
+}
+.iWantTour {
+}
+.iWantTour-head {
+}
+.contacts {
+}
+/*===================================================================================================*/
+/* Footer */
+
+.footer {
+}
+.footer-left {
+}
+.footer-left-agreement {
+}
+.footer-mid {
+}
+.footer-mid-link {
+}
+.footer-socials {
+}
+.socials-list {
+}
+.social-item {
+}
+.social-tripadvisor {
+}
+.social-twitter {
+}
+.social-fb {
+}
+.social-vk {
+}
+.social-instagram {
+}
+.footer-logo-link {
+}
+.footer-logo {
+}
