@@ -1,40 +1,52 @@
+/*===================================================================================================*/
+/* Fonts */
+@font-face {
+  font-family: 'Muller Bold';
+  src: url(/Fonts/MullerBold.woff2) format('woff2'),
+  url(/Fonts/MullerBold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Muller Medium';
+  src: url(/Fonts/MullerMedium.woff2) format('woff2'),
+  url(/Fonts/MullerMedium.woff) format('woff');
+}
+@font-face {
+  font-family: 'Muller Regular';
+  src: url(/Fonts/MullerRegular.woff2) format('woff2'),
+  url(/Fonts/MullerRegular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Muller Light';
+  src: url(/Fonts/MullerLight.woff2) format('woff2'),
+  url(/Fonts/MullerLight.woff) format('woff');
+}
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 a {
   text-decoration: none;
 }
 ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
-/*===================================================================================================*/
-/* Fonts */
-@font-face {
-  font-family: 'Muller Medium';
-  src: url(/Fonts/MullerMedium.woff2) format('woff2'),
-  url(/Fonts/MullerMedium.woff) format('woff');
-  font-style: normal;
-  font-display: swap;
+section {
+  padding-bottom: 70px;
 }
-@font-face {
-  font-family: 'Muller Regular';
-  src: url(/Fonts/MullerRegular.woff2) format('woff2'),
-  url(/Fonts/MullerRegular.woff) format('woff');
-  font-style: normal;
-  font-display: swap;
-}
-/*===================================================================================================*/
-/* container */
-html {
-  font-family: 'Muller Medium';
-}
-body {
-  padding-top: 30px;
+.subtitle {
   font-family: 'Muller Regular';
   font-weight: 400;
+  font-size: 40px;
+  padding-left: 36px;
+}
+
+/*===================================================================================================*/
+/* container */
+body {
+  font-family: 'Muller Regular';
   font-size: 16px;
+  padding-top: 30px;
   background-color: #E5E5E5;
 }
 .container {
@@ -63,13 +75,13 @@ body {
   margin-right: 40px;
 }
 .header-phone {
+  font-family: 'Muller Medium';
   font-size: 20px;
-  font-weight: 500;
+  line-height: 1;
   color: #666;
 }
-.header-right {
-}
 .header-link_lk {
+  color: #CC9933;
 }
 
 /* header-nav */
@@ -79,8 +91,7 @@ body {
   align-items: center;
   justify-content: space-around;
   background-color: white;
-}
-.header-nav {
+  border-radius: 15px;
 }
 .header-nav-list {
   display: flex;
@@ -90,11 +101,16 @@ body {
   margin-right: 45px;
 }
 .header-nav-item-link {
+  color: #666;
 }
 .header-btn-block {
 }
 .header-btn {
   padding: 13px 20px;
+  color: #CC9933;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  background-color: transparent;
 }
 .header-btn-iWantTour {
   margin-right: 40px;
@@ -104,13 +120,14 @@ body {
 
 /*===================================================================================================*/
 /* Main */
-.main {
-}
+/* Section specialOffers */
 .specialOffers {
 }
-.subtitle {
+.specialOffers-subtitle {
+  margin-bottom: 20px;
 }
 .specialOffers-blocks {
+  display: flex;
 }
 .specialOffers-blockLeft {
 }
@@ -124,27 +141,67 @@ body {
 }
 .specialOffers-blockRight {
 }
+
+/*===================================================================================================*/
+/* Section specialOffers */
 .aboutUs {
 }
-.aboutUs-text {
+.aboutUs-subtitle {
+  margin-bottom: 11px;
 }
+.aboutUs-text {
+  line-height: 32px;
+  width: 77%;
+}
+
+/*===================================================================================================*/
+/* Section services */
 .services {
 }
+.services-subtitle {
+  margin-bottom: 20px;
+}
 .services-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services-list-item:nth-child(2n+1) {
+  margin-right: 23px;
 }
 .services-list-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 45%;
+  background-color: white;
+  margin-bottom: 23px;
+  border-radius: 15px;
+}
+.services-list-item:last-child(2) {
+  margin-bottom: 0px;
 }
 .services-list-item-img {
+  padding-bottom: 26px;
 }
 .services-list-item-link {
+  font-size: 20px;
+  line-height: 32px;
+  color: #CC9933;
+  padding-left: 45px;
 }
 .services-list-item-text {
+  display: block;
+  line-height: 32px;
+  padding-left: 45px;
+  margin-bottom: 45px;
 }
 .benifits {
 }
 .benifits-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 .benifits-item {
+  flex: 1 1 25%;
 }
 .benifits-item-svg {
 }
@@ -153,8 +210,11 @@ body {
 .placing {
 }
 .placing-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 .placing-item {
+  flex: 1 1 33.33%;
 }
 .placing-item-img {
 }
@@ -175,6 +235,7 @@ body {
 .placing-item-img-last {
 }
 .placing-item-link-last {
+  display: block;
 }
 .iWantTour {
 }
