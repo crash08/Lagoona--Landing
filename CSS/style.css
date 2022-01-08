@@ -1,22 +1,22 @@
 /*===================================================================================================*/
 /* Fonts */
 @font-face {
-  font-family: 'Muller Bold';
+  font-family: 'MullerBold';
   src: url(/Fonts/MullerBold.woff2) format('woff2'),
   url(/Fonts/MullerBold.woff) format('woff');
 }
 @font-face {
-  font-family: 'Muller Medium';
+  font-family: 'MullerMedium';
   src: url(/Fonts/MullerMedium.woff2) format('woff2'),
   url(/Fonts/MullerMedium.woff) format('woff');
 }
 @font-face {
-  font-family: 'Muller Regular';
+  font-family: 'MullerRegular';
   src: url(/Fonts/MullerRegular.woff2) format('woff2'),
   url(/Fonts/MullerRegular.woff) format('woff');
 }
 @font-face {
-  font-family: 'Muller Light';
+  font-family: 'MullerLight';
   src: url(/Fonts/MullerLight.woff2) format('woff2'),
   url(/Fonts/MullerLight.woff) format('woff');
 }
@@ -35,16 +35,17 @@ section {
   padding-bottom: 70px;
 }
 .subtitle {
-  font-family: 'Muller Regular';
+  font-family: 'MullerRegular';
   font-weight: 400;
   font-size: 40px;
   padding-left: 36px;
+  color: #333333;
 }
 
 /*===================================================================================================*/
 /* container */
 body {
-  font-family: 'Muller Regular';
+  font-family: 'MullerRegular', sans-serif;
   font-size: 16px;
   padding-top: 30px;
   background-color: #E5E5E5;
@@ -75,7 +76,7 @@ body {
   margin-right: 40px;
 }
 .header-phone {
-  font-family: 'Muller Medium';
+  font-family: 'MullerMedium';
   font-size: 20px;
   line-height: 1;
   color: #666;
@@ -129,21 +130,74 @@ body {
 .specialOffers-blocks {
   display: flex;
 }
-.specialOffers-blockLeft {
-}
-.specialOffers-blockLeft-1 {
-}
-.specialOffers-blockLeft-1-img {
-}
-.blockLeft-1-link {
-}
-.specialOffers-blockLeft-2 {
+.specialOffers-blocksLeft {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
 }
 .specialOffers-blockRight {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 40px;
+  background: url(/img/specialOffers/specialOffersRight.png) center no-repeat;
+  background-size: cover;
+  border-radius: 10px;
 }
-
+.specialOffers-blockLeft-1 {
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
+  url(/img/specialOffers/SpecialOffersLeft01.png);
+  margin-bottom: 24px;
+}
+.specialOffers-blockLeft-2 {
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
+  url(/img/specialOffers/SpecialOffersLeft02.png);
+}
+.specialOffers-blockLeft {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.specialOffers-blocks h3 {
+  font-family: 'MullerBold';
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1;
+  color: white;
+  max-width: 62%;
+  letter-spacing: 0.01em;
+}
+.specialOffers-blockRight h3 {
+  font-size: 60px;
+}
+.specialOffers-blocks p {
+  font-family: 'MullerLight';
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.8;
+  letter-spacing: 0.02em;
+  margin-top: 15px;
+}
+.specialOffers-blockRight p {
+  font-size: 30px;
+}
+.specialOffers-blocks a {
+  font-family: 'MullerLight';
+  color: #FFCC66;
+  letter-spacing: 0.02em;
+  margin-top: 47px;
+}
 /*===================================================================================================*/
-/* Section specialOffers */
+/* Section about US */
 .aboutUs {
 }
 .aboutUs-subtitle {
@@ -183,60 +237,177 @@ body {
   padding-bottom: 26px;
 }
 .services-list-item-link {
+  font-family: 'MullerMedium';
   font-size: 20px;
-  line-height: 32px;
+  line-height: 2em;
   color: #CC9933;
   padding-left: 45px;
 }
 .services-list-item-text {
   display: block;
-  line-height: 32px;
+  line-height: 2em;
   padding-left: 45px;
   margin-bottom: 45px;
+  max-width: 80%;
 }
+
+/*===================================================================================================*/
+/* Section benifits */
 .benifits {
+  padding-bottom: 47px;
+}
+.benifits-subtitle {
+  margin-bottom: 30px;
 }
 .benifits-list {
   display: flex;
   flex-wrap: wrap;
 }
+.benifits-item:nth-child(4n) {
+  margin-right: 0;
+}
 .benifits-item {
-  flex: 1 1 25%;
+  flex: 1 1 20%;
+  padding: 33px 45px;
+  background-color: white;
+  margin-right: 23px;
+  margin-bottom: 23px;
+  border-radius: 15px;
 }
 .benifits-item-svg {
+  display: block;
+  margin-bottom: 10px;
+}
+.benifits-item-svg-1 {
+  width: 64px;
+  height: 66px;
+  background-image: url(/img/benifits/benefits01.svg);
+}
+.benifits-item-svg-2 {
+  width: 67px;
+  height: 66px;
+  background-image: url(/img/benifits/benefits02.svg);
+}
+.benifits-item-svg-3 {
+  width: 64px;
+  height: 66px;
+  background-image: url(/img/benifits/benefits03.svg);
+}
+.benifits-item-svg-4 {
+  width: 66px;
+  height: 66px;
+  background-image: url(/img/benifits/benefits04.svg);
+}
+.benifits-item-svg-5 {
+  width: 66px;
+  height: 66px;
+  background-image: url(/img/benifits/benefits05.svg);
+}
+.benifits-item-svg-6 {
+  width: 64px;
+  height: 66px;
+  background-image: url(/img/benifits/benefits06.svg);
+}
+.benifits-item-svg-7 {
+  width: 64px;
+  height: 66px;
+  background-image: url(/img/benifits/benefits07.svg);
+}
+.benifits-item-svg-8 {
+  width: 64px;
+  height: 66px;
+  background-image: url(/img/benifits/benefits08.svg);
 }
 .benifits-item-text {
+  font-size: 16px;
+  line-height: 32px;
 }
+
+/*===================================================================================================*/
+/* Section placing */
 .placing {
+  padding-bottom: 84px;
+}
+.placing-subtitle {
+  margin-bottom: 30px;
 }
 .placing-list {
   display: flex;
   flex-wrap: wrap;
 }
+.placing-item:nth-child(3n) {
+  margin-right: 0;
+}
 .placing-item {
-  flex: 1 1 33.33%;
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 23px;
+  margin-bottom: 23px;
+  background-color: white;
+  border-radius: 15px;
 }
 .placing-item-img {
+  padding-bottom: 30px;
+}
+.placing-item-stroka1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 13px;
 }
 .placing-item-price {
+  margin-left: 45px;
 }
-.placing-item-price_ {
+.placing-item-price span:first-child {
+  color: #999;
+}
+.placing-item-price b {
+  font-size: 20px;
 }
 .placing-item-star {
+  margin-right: 40px;
+  transform: translateY(2.5px);
+}
+.placing-item-star img:not(:last-child) {
+  float: left;
+  margin-right: 6px;
 }
 .placing-item-coutry1 {
+  margin-left: 45px;
+  margin-bottom: 16px;
 }
 .placing-item-coutry2 {
+  margin-left: 45px;
+  margin-bottom: 20px;
+  color: #999;
 }
 .placing-item-link {
+  align-self: flex-start;
+  margin-left: 45px;
+  margin-bottom: 37px;
+  color: #CC9933;
+  padding: 13px 20px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
 }
 .placing-item-last {
+  position: relative;
 }
 .placing-item-img-last {
 }
 .placing-item-link-last {
   display: block;
+  position: absolute;
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  top: 373px;
+  left: 54px;
 }
+/*===================================================================================================*/
+/* Section i Want tour */
 .iWantTour {
 }
 .iWantTour-head {
