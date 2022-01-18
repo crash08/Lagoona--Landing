@@ -4,6 +4,7 @@
   Сделана главная страница сайта index.html.
   Подключен normilize.css.
   Сделан "статический" макет в style.css согласно код-стайлу
+  Сделаны наименования согласно документации БЭМ
 
 ============================================================================ */
 /* ============================================================================
@@ -96,39 +97,39 @@ ul {
 
 
 /* ============================================================================
-    #HEADER
+    #HEADER TOP
 ============================================================================ */
 
 .header {
   margin-bottom: 70px;
 }
 
-.container-header {
+.header__content_top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
 }
 
-.header-left {
-  display: inherit;
-  align-items: inherit;
+.header__block_left {
+  display: flex;
+  align-items: center;
 }
 
-.logo-img {
+.header__logo_img {
   width: 261px;
   height: 54px;
   margin-right: 40px;
 }
 
-.header-phone {
+.header__phone {
   font-family: 'MullerMedium';
   font-size: 20px;
   line-height: 1;
   color: #666;
 }
 
-.header-link-lk-img {
+.header__personal-link-img {
   display: inline-block;
   width: 21px;
   height: 12px;
@@ -142,41 +143,40 @@ ul {
 
 
 /* ============================================================================
-    #HEADER-NAV
+    #HEADER BOTTOM - MENU
 ============================================================================ */
 
-.container-header-nav {
-  height: 70px;
+.header__content_bottom,
+.menu__list,
+.header__block-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header__content_bottom {
+  height: 70px;
   padding: 0 45px;
   background-color: white;
   border-radius: 15px;
 }
 
-.header-nav {
+.menu {
   flex: 1 1 64%;
   display: flex;
 }
 
-.header-nav-list {
+.menu__list {
   flex: 1 1 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding-right: 56px;
 }
 
-.header-nav-item-link {
+.menu__link {
   color: #666;
 }
 
-.header-btn-block {
+.header__block-button {
   flex: 1 1 36%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding-left: 56px;
   border-left: 1px solid #E1E1E1;
 }
@@ -193,26 +193,26 @@ ul {
 
 ============================================================================ */
 
-.specialOffers-subtitle {
+.special__subtitle {
   margin-bottom: 20px;
 }
 
-.specialOffers-blocks {
+.special__grid {
   display: flex;
 }
 
-.specialOffers-blocksLeft,
-.specialOffers-blockRight {
-  flex: 1 1 50%;
+.special__grid_left,
+.special__grid_right {
+  flex: 1 1 45%;
   display: flex;
   flex-direction: column;
 }
 
-.specialOffers-blocksLeft {
+.special__grid_left {
   margin-right: 24px;
 }
 
-.specialOffers-blockRight {
+.offer_right {
   align-items: flex-start;
   justify-content: end;
   padding: 40px;
@@ -221,18 +221,18 @@ ul {
   border-radius: 10px;
 }
 
-.specialOffers-blockLeft-1 {
+.offer_left_1 {
   margin-bottom: 24px;
   background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
   url(/img/specialOffers/SpecialOffersLeft01.png);
 }
 
-.specialOffers-blockLeft-2 {
+.offer_left_2 {
   background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
   url(/img/specialOffers/SpecialOffersLeft02.png);
 }
 
-.specialOffers-blockLeft {
+.offer_left {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -245,7 +245,7 @@ ul {
   border-radius: 10px;
 }
 
-.specialOffers-blocks h3 {
+.offer__name {
   max-width: 62%;
   font-family: 'MullerBold';
   font-size: 40px;
@@ -255,11 +255,11 @@ ul {
   letter-spacing: 0.01em;
 }
 
-.specialOffers-blockRight h3 {
+.offer__name_big {
   font-size: 60px;
 }
 
-.specialOffers-blocks p {
+.offer__price {
   margin-top: 15px;
   font-family: 'MullerLight';
   font-size: 20px;
@@ -269,11 +269,11 @@ ul {
   opacity: 0.8;
 }
 
-.specialOffers-blockRight p {
+.offer__price_big {
   font-size: 30px;
 }
 
-.block-link {
+.offer__link {
   display: flex;
   align-items: center;
   margin-top: 47px;
@@ -281,7 +281,7 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.block-link-img {
+.offer__link-img {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -298,11 +298,11 @@ ul {
     #SECTION -- ABOUT US
 ============================================================================ */
 
-.aboutUs-subtitle {
+.about__subtitle {
   margin-bottom: 11px;
 }
 
-.aboutUs-text {
+.about__text {
   line-height: 32px;
   width: 77%;
 }
@@ -315,24 +315,24 @@ ul {
     #SECTION -- SERVICES
 ============================================================================ */
 
-.services-subtitle {
+.services__subtitle {
   margin-bottom: 20px;
 }
 
-.services-list {
+.services__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.services-list-item:nth-child(2n+1) {
+.services__item:nth-child(2n+1) {
   margin-right: 23px;
 }
 
-.services-list-item:not(:nth-last-child(-n+2)) {
+.services__item:not(:nth-last-child(-n+2)) {
   margin-bottom: 23px;
 }
 
-.services-list-item {
+.services__item {
   flex: 1 1 45%;
   display: flex;
   flex-direction: column;
@@ -340,11 +340,11 @@ ul {
   border-radius: 15px;
 }
 
-.services-list-item-img {
+.services__img {
   padding-bottom: 26px;
 }
 
-.services-list-item-link {
+.services__link {
   align-self: flex-start;
   display: flex;
   align-items: center;
@@ -355,7 +355,7 @@ ul {
   color: #CC9933;
 }
 
-.services-link-img {
+.services__link-img {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -364,7 +364,7 @@ ul {
   transform: translateY(-0.25px);
 }
 
-.services-list-item-text {
+.services__text {
   display: block;
   max-width: 80%;
   margin-bottom: 45px;
@@ -380,84 +380,72 @@ ul {
     #SECTION -- BENIFITS
 ============================================================================ */
 
-.benifits-subtitle {
+.benifits__subtitle {
   margin-bottom: 30px;
 }
 
-.benifits-list {
+.benifits__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.benifits-item:not(:nth-child(4n)) {
+.benifits__item:not(:nth-child(4n)) {
   margin-right: 23px;
 }
 
-.benifits-item:not(:nth-last-child(-n+4)) {
+.benifits__item:not(:nth-last-child(-n+4)) {
   margin-bottom: 23px;
 }
 
-.benifits-item {
+.benifits__item {
   flex: 1 1 20%;
   padding: 33px 45px;
   background-color: white;
   border-radius: 15px;
 }
 
-.benifits-item-svg {
+.benifits__svg {
+  width: 66px;
+  height: 66px;
   display: block;
   margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.benifits-item-svg-1 {
-  width: 64px;
-  height: 66px;
+.benifits__svg-1 {
   background-image: url(/img/benifits/benefits01.svg);
 }
 
-.benifits-item-svg-2 {
-  width: 67px;
-  height: 66px;
+.benifits__svg-2 {
   background-image: url(/img/benifits/benefits02.svg);
 }
 
-.benifits-item-svg-3 {
-  width: 64px;
-  height: 66px;
+.benifits__svg-3 {
   background-image: url(/img/benifits/benefits03.svg);
 }
 
-.benifits-item-svg-4 {
-  width: 66px;
-  height: 66px;
+.benifits__svg-4 {
   background-image: url(/img/benifits/benefits04.svg);
 }
 
-.benifits-item-svg-5 {
-  width: 66px;
-  height: 66px;
+.benifits__svg-5 {
   background-image: url(/img/benifits/benefits05.svg);
 }
 
-.benifits-item-svg-6 {
-  width: 64px;
-  height: 66px;
+.benifits__svg-6 {
   background-image: url(/img/benifits/benefits06.svg);
 }
 
-.benifits-item-svg-7 {
-  width: 64px;
-  height: 66px;
+.benifits__svg-7 {
   background-image: url(/img/benifits/benefits07.svg);
 }
 
-.benifits-item-svg-8 {
-  width: 64px;
-  height: 66px;
+.benifits__svg-8 {
   background-image: url(/img/benifits/benefits08.svg);
 }
 
-.benifits-item-text {
+.benifits__text {
   font-size: 16px;
   line-height: 32px;
 }
@@ -470,24 +458,24 @@ ul {
     #SECTION -- PLACING
 ============================================================================ */
 
-.placing-subtitle {
+.placing__subtitle {
   margin-bottom: 30px;
 }
 
-.placing-list {
+.placing__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.placing-item:not(:nth-child(3n)) {
+.placing__item:not(:nth-child(3n)) {
   margin-right: 23px;
 }
 
-.placing-item:not(:nth-last-child(-n+3)) {
+.placing__item:not(:nth-last-child(-n+3)) {
   margin-bottom: 23px;
 }
 
-.placing-item {
+.placing__item {
   flex: 1 1 30%;
   display: flex;
   flex-direction: column;
@@ -496,54 +484,59 @@ ul {
   border-radius: 15px;
 }
 
-.placing-item-img {
+.placing__img {
   padding-bottom: 30px;
 }
 
-.placing-item-price_and_star {
+.placing__price_star {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 13px;
 }
 
-.placing-item-price {
+.placing__price {
   margin-left: 45px;
 }
 
-.placing-item-price span:first-child {
+.placing__price::before {
+  content: 'от ';
   color: #999;
 }
 
-.placing-item-price b {
+.placing__price::after {
+  content: ' / ночь';
+}
+
+.placing__price_b {
   font-size: 20px;
 }
 
-.placing-item-star {
+.placing__star {
   margin-right: 40px;
   transform: translateY(2.5px);
 }
 
-.placing-item-star img:not(:last-child) {
+.placing__star-img:not(:last-child) {
   float: left;
   margin-right: 6px;
 }
 
-.placing-item-coutry1 {
+.placing__coutry_1 {
   margin: 0 45px 16px;
 }
 
-.placing-item-coutry2 {
+.placing__coutry_2 {
   margin: 0 45px 20px;
   color: #999;
 }
 
-.placing-item-link {
+.placing__link {
   align-self: flex-start;
   margin: 0 45px 37px;
 }
 
-.placing-item-last {
+.placing__item_last {
   flex: 1 1 30%;
   display: flex;
   flex-direction: column;
@@ -555,15 +548,14 @@ ul {
   border-radius: 15px;
 }
 
-.placing-item-link-last {
+.placing__link_last {
   display: flex;
   align-items: center;
   font-size: 20px;
-  line-height: 1;
   color: white;
 }
 
-.placing-item-link-last-img {
+.placing__link-img_last {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -580,17 +572,17 @@ ul {
     #SECTION -- I WANT TOUR
 ============================================================================ */
 
-.iWantTour-bg {
+.i-want-tour__content {
   background: #e9e9e9;
   border-radius: 15px;
 }
 
-.iWantTour-subtitle {
+.i-want-tour__subtitle {
   margin-bottom: 20px;
   padding-top: 40px;
 }
 
-.form-container {
+.form-content {
   padding: 0 45px 70px 45px;
 }
 
@@ -603,24 +595,24 @@ ul {
   border-radius: 15px;
 }
 
-.form-label {
+.form__label {
   display: flex;
   flex-direction: column;
   font-size: 12px;
   line-height: 1;
 }
 
-.form-label-date {
+.form__label[for="date"] {
   display: inline-block;
 }
 
-.form-label:not(:last-child) {
+.form__label:not(:last-child) {
   padding-right: 2%;
   border-right: 1px solid #E1E1E1;
 }
 
-select,
-input {
+.form__select,
+.form__input {
   width: 100%;
   margin-top: 15px;
   font-size: 16px;
@@ -628,17 +620,17 @@ input {
   border: none;
 }
 
-select,
-.input-date {
+.form__select,
+.form__input[type="date"] {
   margin-left: -5px;
 }
 
-.input-date {
+.form__input[type="date"] {
   display: inline-block;
   width: 88%;
 }
 
-.input-date-img {
+.form__input-date_img {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -646,12 +638,12 @@ select,
   transform: translateY(4px);
 }
 
-.input-num {
+.form__input[type="number"] {
   max-width: 130px;
   border-bottom: 1px solid #E1E1E1;
 }
 
-.submite-btn {
+.form__button {
   align-self: flex-end;
   padding: 13px 30px;
   cursor: pointer;
@@ -669,11 +661,11 @@ select,
   padding-bottom: 20px;
 }
 
-.contacts-subtitle {
+.contacts__subtitle {
   margin-bottom: 26px;
 }
 
-.contacts-bg {
+.contacts__content {
   display: flex;
   min-width: 465px;
   padding: 44px;
@@ -681,32 +673,32 @@ select,
   border-radius: 15px;
 }
 
-.contacts-list {
+.contacts__list {
   flex: 0 0 375px;
   display: flex;
   flex-direction: column;
   margin-right: 50px;
 }
 
-.contacts-item:not(:first-child) {
+.contacts__item:not(:first-child) {
   padding-top: 25px;
 }
 
-.contacts-item {
+.contacts__item {
   display: flex;
   justify-content: space-between;
   padding-bottom: 22px;
   border-bottom: 1px solid #c4c4c4;
 }
 
-.contacts-item-name {
+.contacts__type {
   flex: 0 0 145px;
   font-family: 'MullerBold';
   line-height: 1;
   font-size: 20px;
 }
 
-.contacts-item-info {
+.contacts__value {
   flex: 0 0 230px;
   display: flex;
   flex-direction: column;
@@ -714,18 +706,18 @@ select,
   font-style: normal;
 }
 
-.contacts-item-link-info {
+.contacts__link-description {
   color: #999;
 }
 
-.contacts-block-right {
+.contacts__img {
   flex: 1 1 653px;
   background: url(/img/contactsIMG.png) center no-repeat;
   background-size: cover;
   border-radius: 15px;
 }
 
-.contacts-btn {
+.contacts__button {
   max-width: 213px;
   margin-top: 45px;
   padding: 27px 27px;
@@ -750,7 +742,7 @@ select,
   font-family: 'MullerRegular';
 }
 
-.footer-container {
+.footer__content {
   min-height: 341px;
   display: flex;
   padding: 45px 52px;
@@ -762,7 +754,7 @@ select,
   border-radius: 15px;
 }
 
-.footer-left {
+.footer_left {
   flex-basis: 320px;
   display: flex;
   flex-direction: column;
@@ -770,58 +762,62 @@ select,
   margin-right: 100px;
 }
 
-.footer-mid {
+.footer_mid {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 105px;
 }
 
-.footer-mid-link {
+.footer__adress {
+  font-style: normal;
+}
+
+.footer__link {
   line-height: 1.5em;
 }
 
-.footer-socials {
+.footer-logo {
+  align-self: flex-end;
+  margin-bottom: -45px;
+  margin-left: -9%;
+}
+
+.social_footer {
   margin-left: auto;
   padding-left: 15px;
 }
 
-.social-item {
+.social__item {
   width: 25px;
   height: 25px;
 }
 
-.social-item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.social-link {
+.social__link {
   background-size: cover;
   height: 100%;
 }
 
-.social-tripadvisor {
+.social__tripadvisor {
   background: url(/img/social/social01.svg) center no-repeat;
 }
 
-.social-twitter {
+.social__twitter {
   background: url(/img/social/twitter02.svg) center no-repeat;
 }
 
-.social-fb {
+.social__fb {
   background: url(/img/social/fb03.svg) center no-repeat;
 }
 
-.social-vk {
+.social__vk {
   background: url(/img/social/vk05.svg) center no-repeat;
 }
 
-.social-instagram {
+.social__instagram {
   background: url(/img/social/instagram04.svg) center no-repeat;
-}
-
-.footer-logo-link {
-  align-self: flex-end;
-  margin-bottom: -45px;
-  margin-left: -9%;
 }
