@@ -1,0 +1,274 @@
+/* ============================================================================
+
+  CSS с анимациями
+
+============================================================================ */
+
+
+
+
+
+/* ============================================================================
+    #VAR
+============================================================================ */
+:root {
+  --hover_focus-color: #CC9933;
+  --active-color: #A47312;
+}
+
+
+
+
+
+/* ============================================================================
+    #GENERAL
+============================================================================ */
+.button {
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.button:hover,
+.button:focus {
+  color: white;
+  background-color: var(--hover_focus-color);
+}
+
+.button:active {
+  color: white;
+  background-color: var(--active-color);
+}
+
+
+
+
+
+/* ============================================================================
+    #HEADER
+============================================================================ */
+.header__phone,
+.menu__link {
+  transition: color 0.2s ease;
+}
+
+.header__phone:hover,
+.menu__link:hover {
+  color: var(--hover_focus-color);
+}
+
+.header__phone:focus,
+.menu__link:focus,
+.header__personal:focus {
+  color: var(--hover_focus-color);
+  outline: 2px solid var(--hover_focus-color);
+}
+
+.header__phone:active,
+.menu__link:active {
+  color: var(--active-color);
+}
+
+
+
+.header__personal {
+  transition: color 0.2s ease;
+}
+
+.header__personal_img path {
+  transition: fill 0.2s ease;
+}
+
+.header__personal:hover {
+  color: #E9C479;
+}
+
+.header__personal:hover .header__personal_img path {
+  fill: #E9C479;
+}
+
+.header__personal:active {
+  color: var(--active-color);
+}
+
+.header__personal:active .header__personal_img path {
+  fill: var(--active-color);
+}
+
+
+
+
+
+/* ============================================================================
+    #SECTION -- SPECIAL
+============================================================================ */
+.offer {
+  transition: transform 0.2s ease;
+}
+
+.offer__info {
+  transition: color 0.2s ease;
+}
+
+.offer__info_img path {
+  transition: stroke 0.2s ease;
+}
+
+.offer:hover {
+  transform: scale(1.025);
+}
+
+.offer__link:focus {
+  outline: 2px solid var(--hover_focus-color);
+  outline-offset: 6px;
+}
+
+.offer:active .offer__info {
+  color: #E9C479;
+}
+
+.offer:active .offer__info_img path {
+  stroke: #E9C479;
+}
+
+
+
+
+
+/* ============================================================================
+    #SECTION -- SERVICES
+============================================================================ */
+.services__item {
+  transition: transform 0.2s ease;
+}
+
+.services__info {
+  transition: color 0.2s ease;
+}
+
+.services__info-img path {
+  transition: stroke 0.2s ease;
+}
+
+.services__link:focus {
+  outline: 2px solid var(--hover_focus-color);
+  outline-offset: 6px;
+}
+
+.services__item:hover {
+  transform: scale(1.025);
+}
+
+.services__item:hover .services__info{
+  color: #E9C479;
+}
+
+.services__item:hover .services__info-img path {
+  stroke: #E9C479;
+}
+
+.services__item:active .services__info{
+  color: var(--active-color);
+}
+
+.services__item:active .services__info-img path {
+  stroke: var(--active-color);
+}
+
+
+
+
+/* ============================================================================
+    #SECTION -- PLACING
+============================================================================ */
+.placing__item_last {
+  transition: transform 0.2s ease;
+}
+
+.placing__info-img_last path {
+  transition: stroke 0.2s ease;
+}
+
+.placing__info {
+  transition: color 0.2s ease;
+}
+
+.placing__item_last:hover {
+  transform: scale(1.025);
+}
+
+.placing__item_last:hover .placing__info {
+  color: #E9C379;
+}
+
+.placing__item_last:hover .placing__info-img_last path {
+  stroke: #E9C379;
+}
+
+.placing__link_last:focus {
+  outline: none;
+  /* outline: 2px solid var(--hover_focus-color);
+  outline-offset: 6px; */
+}
+
+.placing__item_last:active .placing__info {
+  color: #E9C379;
+}
+
+.placing__item_last:active .placing__info-img_last path {
+  stroke: #E9C379;
+}
+
+
+
+
+
+/* ============================================================================
+    #SECTION -- I WANT TOUR
+============================================================================ */
+.form__select:focus,
+.form__input:focus {
+  outline: 2px solid var(--hover_focus-color);
+  outline-offset: 1px;
+}
+
+
+
+
+
+/* ============================================================================
+    #SECTION -- CONTACTS & FOOTER
+============================================================================ */
+.contacts__link,
+.footer__link {
+  transition: color 0.2s ease;
+}
+
+.contacts__link:hover,
+.footer__link:hover {
+  color: #E9C379;
+}
+
+.contacts__link:focus,
+.footer__link:focus {
+  outline: 2px solid var(--hover_focus-color);
+}
+
+.contacts__link:active,
+.footer__link:active {
+  color: var(--active-color);
+}
+
+.social__svg path {
+  transition: fill 0.2s ease;
+}
+
+.social__link:hover .social__svg path {
+  fill: var(--hover_focus-color);
+}
+
+.social__link:focus .social__svg path {
+  fill: var(--hover_focus-color);
+}
+
+.social__link:active .social__svg path {
+  fill: var(--active-color);
+}
