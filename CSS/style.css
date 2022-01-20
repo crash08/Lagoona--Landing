@@ -29,27 +29,35 @@
 ============================================================================ */
 
 @font-face {
-  font-family: 'MullerBold';
-  src: url(/Fonts/MullerBold.woff2) format('woff2'),
-  url(/Fonts/MullerBold.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'MullerMedium';
-  src: url(/Fonts/MullerMedium.woff2) format('woff2'),
-  url(/Fonts/MullerMedium.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'MullerRegular';
-  src: url(/Fonts/MullerRegular.woff2) format('woff2'),
-  url(/Fonts/MullerRegular.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'MullerLight';
+  font-family: 'Muller';
   src: url(/Fonts/MullerLight.woff2) format('woff2'),
   url(/Fonts/MullerLight.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url(/Fonts/MullerRegular.woff2) format('woff2'),
+  url(/Fonts/MullerRegular.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url(/Fonts/MullerMedium.woff2) format('woff2'),
+  url(/Fonts/MullerMedium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url(/Fonts/MullerBold.woff2) format('woff2'),
+  url(/Fonts/MullerBold.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
 
 
@@ -68,7 +76,7 @@
 
 body {
   padding: 30px 0 20px;
-  font-family: 'MullerRegular', sans-serif;
+  font-family: 'Muller', sans-serif;
   font-size: 16px;
   background-color: #F1F1F1;
 }
@@ -88,9 +96,8 @@ ul {
 
 .subtitle {
   padding-left: 36px;
-  font-family: 'MullerRegular';
+  font-weight: normal;
   font-size: 40px;
-  font-weight: 400;
   color: #333333;
 }
 
@@ -144,7 +151,7 @@ ul {
 }
 
 .header__phone {
-  font-family: 'MullerMedium';
+  font-weight: 500;
   font-size: 20px;
   line-height: 1;
   color: #666;
@@ -260,10 +267,9 @@ ul {
 
 .offer__name {
   max-width: 62%;
-  font-family: 'MullerBold';
+  font-weight: 700;
   font-size: 40px;
   line-height: 1;
-  font-weight: 500;
   color: white;
   letter-spacing: 0.01em;
 }
@@ -274,7 +280,6 @@ ul {
 
 .offer__price {
   margin-top: 15px;
-  font-family: 'MullerLight';
   font-size: 20px;
   line-height: 1;
   color: white;
@@ -290,7 +295,6 @@ ul {
   display: flex;
   align-items: center;
   margin-top: 47px;
-  font-family: 'MullerLight';
   letter-spacing: 0.02em;
   color: #CC9933;
 }
@@ -374,7 +378,7 @@ ul {
   display: flex;
   align-items: center;
   align-content: flex-start;
-  font-family: 'MullerMedium';
+  font-weight: 500;
   font-size: 20px;
   line-height: 2em;
   color: #CC9933;
@@ -593,6 +597,7 @@ ul {
 .placing__info {
   display: flex;
   align-items: center;
+  font-weight: 500;
   font-size: 20px;
   color: white;
 }
@@ -745,7 +750,7 @@ ul {
 
 .contacts__type {
   flex: 0 1 145px;
-  font-family: 'MullerBold';
+  font-weight: 700;
   line-height: 1;
   font-size: 20px;
 }
@@ -774,7 +779,7 @@ ul {
   max-width: 213px;
   margin-top: 45px;
   padding: 27px 27px;
-  font-family: 'MullerBold';
+  font-weight: 700;
 }
 
 
@@ -791,16 +796,11 @@ ul {
   display: block;
 }
 
-.footer a {
-  font-family: 'MullerRegular';
-}
-
 .footer__content {
   min-height: 341px;
   display: flex;
   padding: 45px 52px;
-  font-family: 'MullerLight';
-  font-weight: 500;
+  font-weight: 300;
   line-height: 2em;
   color: #FFF;
   background-color: #333333;
