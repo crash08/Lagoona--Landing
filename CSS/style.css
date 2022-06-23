@@ -30,32 +30,32 @@
 
 @font-face {
   font-family: 'Muller';
-  src: url(/Fonts/MullerLight.woff2) format('woff2'),
-  url(/Fonts/MullerLight.woff) format('woff');
+  src: url(../Fonts/MullerLight.woff2) format('woff2'),
+  url(../Fonts/MullerLight.woff) format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Muller';
-  src: url(/Fonts/MullerRegular.woff2) format('woff2'),
-  url(/Fonts/MullerRegular.woff) format('woff');
+  src: url(../Fonts/MullerRegular.woff2) format('woff2'),
+  url(../Fonts/MullerRegular.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Muller';
-  src: url(/Fonts/MullerMedium.woff2) format('woff2'),
-  url(/Fonts/MullerMedium.woff) format('woff');
+  src: url(../Fonts/MullerMedium.woff2) format('woff2'),
+  url(../Fonts/MullerMedium.woff) format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Muller';
-  src: url(/Fonts/MullerBold.woff2) format('woff2'),
-  url(/Fonts/MullerBold.woff) format('woff');
+  src: url(../Fonts/MullerBold.woff2) format('woff2'),
+  url(../Fonts/MullerBold.woff) format('woff');
   font-weight: 700;
   font-style: normal;
 }
@@ -239,18 +239,18 @@ ul {
 }
 
 .offer_right {
-  background: url(/img/specialOffers/specialOffersRight.png) center no-repeat;
+  background: url(../img/specialOffers/specialOffersRight.png) center no-repeat;
 }
 
 .offer_left_1 {
   margin-bottom: var(--gap);
   background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
-  url(/img/specialOffers/SpecialOffersLeft01.png) center no-repeat;
+  url(../img/specialOffers/SpecialOffersLeft01.png) center no-repeat;
 }
 
 .offer_left_2 {
   background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
-  url(/img/specialOffers/SpecialOffersLeft02.png) center no-repeat;
+  url(../img/specialOffers/SpecialOffersLeft02.png) center no-repeat;
 }
 
 .offer_left,
@@ -452,35 +452,35 @@ ul {
 }
 
 .benifits__svg-1 {
-  background-image: url(/img/benifits/benefits01.svg);
+  background-image: url(../img/benifits/benefits01.svg);
 }
 
 .benifits__svg-2 {
-  background-image: url(/img/benifits/benefits02.svg);
+  background-image: url(../img/benifits/benefits02.svg);
 }
 
 .benifits__svg-3 {
-  background-image: url(/img/benifits/benefits03.svg);
+  background-image: url(../img/benifits/benefits03.svg);
 }
 
 .benifits__svg-4 {
-  background-image: url(/img/benifits/benefits04.svg);
+  background-image: url(../img/benifits/benefits04.svg);
 }
 
 .benifits__svg-5 {
-  background-image: url(/img/benifits/benefits05.svg);
+  background-image: url(../img/benifits/benefits05.svg);
 }
 
 .benifits__svg-6 {
-  background-image: url(/img/benifits/benefits06.svg);
+  background-image: url(../img/benifits/benefits06.svg);
 }
 
 .benifits__svg-7 {
-  background-image: url(/img/benifits/benefits07.svg);
+  background-image: url(../img/benifits/benefits07.svg);
 }
 
 .benifits__svg-8 {
-  background-image: url(/img/benifits/benefits08.svg);
+  background-image: url(../img/benifits/benefits08.svg);
 }
 
 .benifits__text {
@@ -589,7 +589,7 @@ ul {
   justify-content: flex-end;
   margin-bottom: var(--gap);
   padding: 30px;
-  background: url(/img/placing/placing09.png) center no-repeat transparent;
+  background: url(../img/placing/placing09.png) center no-repeat transparent;
   background-size: cover;
   border-radius: 15px;
 }
@@ -607,7 +607,7 @@ ul {
   width: 16px;
   height: 16px;
   margin-left: 3px;
-  background: url(/img/placing-link-img.svg) center no-repeat transparent;
+  background: url(../img/placing-link-img.svg) center no-repeat transparent;
   transform: translateY(-0.25px);
 }
 
@@ -690,7 +690,7 @@ ul {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url(/img/calendar.svg) center no-repeat transparent;
+  background: url(../img/calendar.svg) center no-repeat transparent;
   transform: translateY(4px);
 }
 
@@ -770,7 +770,7 @@ ul {
 
 .contacts__img {
   flex: 1 1 653px;
-  background: url(/img/contactsIMG.png) center no-repeat;
+  background: url(../img/contactsIMG.png) center no-repeat;
   background-size: cover;
   border-radius: 15px;
 }
